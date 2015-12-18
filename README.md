@@ -6,4 +6,4 @@
 
 ##Foundation
 
-- NSString（修改了可以根据设置行间距和字体来计算文本高度）
+- NSString（修改了可以根据设置行间距和字体来计算文本高度，加入了得到有行间距的NSAttributedString）
