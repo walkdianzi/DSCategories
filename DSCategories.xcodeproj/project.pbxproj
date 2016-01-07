@@ -494,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DSCategories/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dasheng.DSCategories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DSCategories/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dasheng.DSCategories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -578,6 +580,7 @@
 				F92E0B481C2289E200D0CF70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F92E0B491C2289E200D0CF70 /* Build configuration list for PBXNativeTarget "DSCategoriesTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +589,7 @@
 				F92E0B4B1C2289E200D0CF70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F92E0B4C1C2289E200D0CF70 /* Build configuration list for PBXNativeTarget "DSCategoriesUITests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +598,7 @@
 				F92E0B4E1C2289E200D0CF70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
