@@ -6,10 +6,10 @@
 //  Copyright © 2015年 dasheng. All rights reserved.
 //
 
-#import "NSStringDemoViewController.h"
+#import "NSStringViewController.h"
 #import "NSString+Size.h"
 
-@interface NSStringDemoViewController(){
+@interface NSStringViewController(){
     
     UILabel     *_heightLabel;
     UILabel     *_widthLabel;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation NSStringDemoViewController
+@implementation NSStringViewController
 
 - (void)viewDidLoad{
     

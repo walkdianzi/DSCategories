@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */; };
+		135A9CCC1C60547500A7C7AF /* UITextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */; };
 		F92E0B1E1C2289E200D0CF70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B1D1C2289E200D0CF70 /* main.m */; };
 		F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B201C2289E200D0CF70 /* AppDelegate.m */; };
 		F92E0B241C2289E200D0CF70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B231C2289E200D0CF70 /* ViewController.m */; };
@@ -18,7 +20,7 @@
 		F92E0B571C228F0700D0CF70 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B561C228F0700D0CF70 /* NSString+Size.m */; };
 		F92E0B5B1C2297FC00D0CF70 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B5A1C2297FC00D0CF70 /* RootViewController.m */; };
 		F92E0B611C229AC600D0CF70 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B601C229AC600D0CF70 /* BaseViewController.m */; };
-		F92E0B641C229B0B00D0CF70 /* NSStringDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B631C229B0B00D0CF70 /* NSStringDemoViewController.m */; };
+		F92E0B641C229B0B00D0CF70 /* NSStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B631C229B0B00D0CF70 /* NSStringViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		135A9CC61C6053F200A7C7AF /* UITextView+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder.h"; sourceTree = "<group>"; };
+		135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
+		135A9CCA1C60547500A7C7AF /* UITextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewViewController.h; sourceTree = "<group>"; };
+		135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewViewController.m; sourceTree = "<group>"; };
 		F92E0B191C2289E200D0CF70 /* DSCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92E0B1D1C2289E200D0CF70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F92E0B1F1C2289E200D0CF70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,8 +67,8 @@
 		F92E0B5A1C2297FC00D0CF70 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F92E0B5F1C229AC600D0CF70 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F92E0B601C229AC600D0CF70 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		F92E0B621C229B0B00D0CF70 /* NSStringDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringDemoViewController.h; sourceTree = "<group>"; };
-		F92E0B631C229B0B00D0CF70 /* NSStringDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringDemoViewController.m; sourceTree = "<group>"; };
+		F92E0B621C229B0B00D0CF70 /* NSStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringViewController.h; sourceTree = "<group>"; };
+		F92E0B631C229B0B00D0CF70 /* NSStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135A9CC01C6051CF00A7C7AF /* UIKits */ = {
+			isa = PBXGroup;
+			children = (
+				135A9CC51C6053F200A7C7AF /* UITextView */,
+			);
+			path = UIKits;
+			sourceTree = "<group>";
+		};
+		135A9CC41C60536A00A7C7AF /* UIKits */ = {
+			isa = PBXGroup;
+			children = (
+				135A9CC91C60541800A7C7AF /* UITextView */,
+			);
+			path = UIKits;
+			sourceTree = "<group>";
+		};
+		135A9CC51C6053F200A7C7AF /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				135A9CC61C6053F200A7C7AF /* UITextView+PlaceHolder.h */,
+				135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		135A9CC91C60541800A7C7AF /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				135A9CCA1C60547500A7C7AF /* UITextViewViewController.h */,
+				135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
 		F92E0B101C2289E200D0CF70 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +198,7 @@
 		F92E0B4F1C228AED00D0CF70 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				135A9CC01C6051CF00A7C7AF /* UIKits */,
 				F92E0B501C228AED00D0CF70 /* Foundation */,
 			);
 			path = Categories;
@@ -194,6 +235,7 @@
 		F92E0B5C1C229A3600D0CF70 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				135A9CC41C60536A00A7C7AF /* UIKits */,
 				F92E0B5D1C229A3600D0CF70 /* Foundation */,
 			);
 			path = Demos;
@@ -210,8 +252,8 @@
 		F92E0B5E1C229A3600D0CF70 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				F92E0B621C229B0B00D0CF70 /* NSStringDemoViewController.h */,
-				F92E0B631C229B0B00D0CF70 /* NSStringDemoViewController.m */,
+				F92E0B621C229B0B00D0CF70 /* NSStringViewController.h */,
+				F92E0B631C229B0B00D0CF70 /* NSStringViewController.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -347,12 +389,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92E0B241C2289E200D0CF70 /* ViewController.m in Sources */,
+				135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */,
 				F92E0B611C229AC600D0CF70 /* BaseViewController.m in Sources */,
 				F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */,
 				F92E0B1E1C2289E200D0CF70 /* main.m in Sources */,
 				F92E0B571C228F0700D0CF70 /* NSString+Size.m in Sources */,
+				135A9CCC1C60547500A7C7AF /* UITextViewViewController.m in Sources */,
 				F92E0B5B1C2297FC00D0CF70 /* RootViewController.m in Sources */,
-				F92E0B641C229B0B00D0CF70 /* NSStringDemoViewController.m in Sources */,
+				F92E0B641C229B0B00D0CF70 /* NSStringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

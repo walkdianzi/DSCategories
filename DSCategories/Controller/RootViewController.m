@@ -19,6 +19,9 @@
                @"Foundation":@[
                                @"NSString",
                                ],
+               @"UIKits":@[
+                            @"UITextView",
+                          ]
              };
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [self.tableView reloadData];
@@ -48,7 +51,7 @@
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *name =  [_items objectForKey:[_items allKeys][indexPath.section]][indexPath.row];
-    NSString *className = [name stringByAppendingString:@"DemoViewController"];
+    NSString *className = [name stringByAppendingString:@"ViewController"];
     Class class = NSClassFromString(className);
     UIViewController *controller = [[class alloc] init];
     controller.title = name;
