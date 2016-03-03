@@ -15,12 +15,29 @@
  *  得到AttributedString
  *
  *  @param font      字体(默认为系统字体)
+ *
+ *  @return AttributedString
+ */
+-(NSAttributedString *)attributedStringWithFont:(UIFont *)font;
+
+/**
+ *  得到AttributedString
+ *
+ *  @param font      字体(默认为系统字体)
  *  @param lineSpace 行间距
  *
  *  @return AttributedString
  */
 -(NSAttributedString *)attributedStringWithFont:(UIFont *)font LineSpacing:(CGFloat)lineSpace;
 
+
+/**
+ *  @brief 计算文字的高度
+ *
+ *  @param font  字体(默认为系统字体)
+ *  @param width 约束宽度
+ */
+- (CGFloat)heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width;
 
 /**
  *  @brief 计算文字的高度

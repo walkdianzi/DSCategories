@@ -11,6 +11,11 @@
 
 @implementation NSString (Size)
 
+- (NSAttributedString *)attributedStringWithFont:(UIFont *)font{
+    
+    return [self attributedStringWithFont:font LineSpacing:0];
+}
+
 -(NSAttributedString *)attributedStringWithFont:(UIFont *)font LineSpacing:(CGFloat)lineSpace{
     
     UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
@@ -23,6 +28,10 @@
     return attributedString;
 }
 
+- (CGFloat)heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width{
+    
+    return [self heightWithFont:font LineSpacing:0 constrainedToWidth:width];
+}
 
 - (CGFloat)heightWithFont:(UIFont *)font LineSpacing:(CGFloat)lineSpace constrainedToWidth:(CGFloat)width
 {
