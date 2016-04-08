@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13543FB81CB757F100733EDA /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 13543FB41CB757F100733EDA /* NSArray+SafeAccess.m */; };
+		13543FB91CB757F100733EDA /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 13543FB71CB757F100733EDA /* NSDictionary+SafeAccess.m */; };
 		135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */; };
 		135A9CCC1C60547500A7C7AF /* UITextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */; };
 		F92E0B1E1C2289E200D0CF70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B1D1C2289E200D0CF70 /* main.m */; };
@@ -41,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13543FB31CB757F100733EDA /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
+		13543FB41CB757F100733EDA /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
+		13543FB61CB757F100733EDA /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
+		13543FB71CB757F100733EDA /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
 		135A9CC61C6053F200A7C7AF /* UITextView+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceHolder.h"; sourceTree = "<group>"; };
 		135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 		135A9CCA1C60547500A7C7AF /* UITextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewViewController.h; sourceTree = "<group>"; };
@@ -96,6 +102,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13543FB21CB757F100733EDA /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				13543FB31CB757F100733EDA /* NSArray+SafeAccess.h */,
+				13543FB41CB757F100733EDA /* NSArray+SafeAccess.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		13543FB51CB757F100733EDA /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				13543FB61CB757F100733EDA /* NSDictionary+SafeAccess.h */,
+				13543FB71CB757F100733EDA /* NSDictionary+SafeAccess.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
 		135A9CC01C6051CF00A7C7AF /* UIKits */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +231,8 @@
 		F92E0B501C228AED00D0CF70 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				13543FB21CB757F100733EDA /* NSArray */,
+				13543FB51CB757F100733EDA /* NSDictionary */,
 				F92E0B511C228AED00D0CF70 /* NSString */,
 			);
 			path = Foundation;
@@ -388,7 +414,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13543FB91CB757F100733EDA /* NSDictionary+SafeAccess.m in Sources */,
 				F92E0B241C2289E200D0CF70 /* ViewController.m in Sources */,
+				13543FB81CB757F100733EDA /* NSArray+SafeAccess.m in Sources */,
 				135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */,
 				F92E0B611C229AC600D0CF70 /* BaseViewController.m in Sources */,
 				F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */,
