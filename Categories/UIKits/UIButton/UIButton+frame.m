@@ -14,7 +14,7 @@
     return self.imageView.frame.origin.x;
 }
 
-//UIControlContentHorizontalAlignmentLeft：UIEdgeInsetsMake(0, padding, 0, 0)     center：UIEdgeInsetsMake(0, padding, 0, -padding)  right：UIEdgeInsetsMake(0, 0, 0, padding)
+//0.0.2的测试
 
 
 -(void)setImageLeft:(float)imageLeft{
