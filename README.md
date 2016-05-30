@@ -14,3 +14,9 @@
 
 - UITextView+Placeholder (加入Placeholder)
 - UIButton+frame (可以调节UIButton上图片和文字的位置)
+
+##版本更新
+
+0.0.4
+
+加入NSUserDefaults
