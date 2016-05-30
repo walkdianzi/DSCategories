@@ -11,6 +11,7 @@
 		13543FB91CB757F100733EDA /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 13543FB71CB757F100733EDA /* NSDictionary+SafeAccess.m */; };
 		135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */; };
 		135A9CCC1C60547500A7C7AF /* UITextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */; };
+		13AA93DE1CFBDA7700E18CC3 /* UIButton+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */; };
 		F92E0B1E1C2289E200D0CF70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B1D1C2289E200D0CF70 /* main.m */; };
 		F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B201C2289E200D0CF70 /* AppDelegate.m */; };
 		F92E0B241C2289E200D0CF70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B231C2289E200D0CF70 /* ViewController.m */; };
@@ -51,6 +52,8 @@
 		135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceHolder.m"; sourceTree = "<group>"; };
 		135A9CCA1C60547500A7C7AF /* UITextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewViewController.h; sourceTree = "<group>"; };
 		135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewViewController.m; sourceTree = "<group>"; };
+		13AA93DC1CFBDA7700E18CC3 /* UIButton+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+frame.h"; sourceTree = "<group>"; };
+		13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+frame.m"; sourceTree = "<group>"; };
 		F92E0B191C2289E200D0CF70 /* DSCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92E0B1D1C2289E200D0CF70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F92E0B1F1C2289E200D0CF70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 		135A9CC01C6051CF00A7C7AF /* UIKits */ = {
 			isa = PBXGroup;
 			children = (
+				13AA93DB1CFBDA4800E18CC3 /* UIButton */,
 				135A9CC51C6053F200A7C7AF /* UITextView */,
 			);
 			path = UIKits;
@@ -152,6 +156,15 @@
 				135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */,
 			);
 			path = UITextView;
+			sourceTree = "<group>";
+		};
+		13AA93DB1CFBDA4800E18CC3 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				13AA93DC1CFBDA7700E18CC3 /* UIButton+frame.h */,
+				13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		F92E0B101C2289E200D0CF70 = {
@@ -417,6 +430,7 @@
 				13543FB91CB757F100733EDA /* NSDictionary+SafeAccess.m in Sources */,
 				F92E0B241C2289E200D0CF70 /* ViewController.m in Sources */,
 				13543FB81CB757F100733EDA /* NSArray+SafeAccess.m in Sources */,
+				13AA93DE1CFBDA7700E18CC3 /* UIButton+frame.m in Sources */,
 				135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */,
 				F92E0B611C229AC600D0CF70 /* BaseViewController.m in Sources */,
 				F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */,
