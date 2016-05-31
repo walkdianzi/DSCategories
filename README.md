@@ -38,6 +38,11 @@ $ pod install
 
 ##版本更新
 
+ **0.0.6**
+ 
+ 拆分UIView+frame
+ 加入UIView+common（移除所有的subViews，得到当前屏幕的截图）
+ 
  **0.0.5**
 
  加入UIView+frame
