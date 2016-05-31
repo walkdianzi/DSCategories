@@ -14,6 +14,8 @@
 
 - UITextView+Placeholder (加入Placeholder)
 - UIButton+frame (可以调节UIButton上图片和文字的位置)
+- UIView+frame (设置UIView的位置)
+- UIView+common (移除所有的subViews，得到当前屏幕的截图)
 
 ## Podfile
 
