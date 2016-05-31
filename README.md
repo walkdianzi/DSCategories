@@ -15,6 +15,27 @@
 - UITextView+Placeholder (加入Placeholder)
 - UIButton+frame (可以调节UIButton上图片和文字的位置)
 
+## Podfile
+
+To integrate DSCategories into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+
+target :zhefengle do
+
+pod 'DSCategories', '~> 0.0.4'
+
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
 ##版本更新
 
  **0.0.4**
