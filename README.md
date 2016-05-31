@@ -38,6 +38,10 @@ $ pod install
 
 ##版本更新
 
+ **0.0.5**
+
+ 加入UIView+frame
+
  **0.0.4**
 
  加入NSUserDefaults
