@@ -5,10 +5,12 @@
 //  Created by dasheng on 16/5/31.
 //  Copyright © 2016年 dasheng. All rights reserved.
 //
+// 对UIView进行一些操作
+
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (common)
+@interface UIView (operation)
 
 /**
  *  移除所有的subViews

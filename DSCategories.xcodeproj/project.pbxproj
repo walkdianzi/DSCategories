@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		134F1A3C1CFDBA3600C5B707 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3B1CFDBA3600C5B707 /* UIView+frame.m */; };
-		134F1A3F1CFDBB3B00C5B707 /* UIView+common.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3E1CFDBB3B00C5B707 /* UIView+common.m */; };
+		134F1A3F1CFDBB3B00C5B707 /* UIView+operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3E1CFDBB3B00C5B707 /* UIView+operation.m */; };
 		134F1A481CFE75AD00C5B707 /* UIView+frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A471CFE75AD00C5B707 /* UIView+frame.swift */; };
 		134F1A4A1CFE770300C5B707 /* SUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A491CFE770300C5B707 /* SUIViewViewController.swift */; };
 		134F1A4E1CFE810D00C5B707 /* NSObject-FromClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A4D1CFE810D00C5B707 /* NSObject-FromClassName.swift */; };
@@ -52,12 +52,11 @@
 /* Begin PBXFileReference section */
 		134F1A3A1CFDBA3600C5B707 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		134F1A3B1CFDBA3600C5B707 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
-		134F1A3D1CFDBB3B00C5B707 /* UIView+common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+common.h"; sourceTree = "<group>"; };
-		134F1A3E1CFDBB3B00C5B707 /* UIView+common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+common.m"; sourceTree = "<group>"; };
+		134F1A3D1CFDBB3B00C5B707 /* UIView+operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+operation.h"; sourceTree = "<group>"; };
+		134F1A3E1CFDBB3B00C5B707 /* UIView+operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+operation.m"; sourceTree = "<group>"; };
 		134F1A471CFE75AD00C5B707 /* UIView+frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+frame.swift"; sourceTree = "<group>"; };
 		134F1A491CFE770300C5B707 /* SUIViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIViewViewController.swift; sourceTree = "<group>"; };
 		134F1A4D1CFE810D00C5B707 /* NSObject-FromClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject-FromClassName.swift"; sourceTree = "<group>"; };
-		134F1A4F1CFE8B6900C5B707 /* DSCategories-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSCategories-Bridging-Header.h"; sourceTree = "<group>"; };
 		13543FB31CB757F100733EDA /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
 		13543FB41CB757F100733EDA /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
 		13543FB61CB757F100733EDA /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
@@ -126,8 +125,8 @@
 			children = (
 				134F1A3A1CFDBA3600C5B707 /* UIView+frame.h */,
 				134F1A3B1CFDBA3600C5B707 /* UIView+frame.m */,
-				134F1A3D1CFDBB3B00C5B707 /* UIView+common.h */,
-				134F1A3E1CFDBB3B00C5B707 /* UIView+common.m */,
+				134F1A3D1CFDBB3B00C5B707 /* UIView+operation.h */,
+				134F1A3E1CFDBB3B00C5B707 /* UIView+operation.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -272,7 +271,6 @@
 		F92E0B101C2289E200D0CF70 = {
 			isa = PBXGroup;
 			children = (
-				134F1A4F1CFE8B6900C5B707 /* DSCategories-Bridging-Header.h */,
 				F92E0B5C1C229A3600D0CF70 /* Demos */,
 				134F1A431CFE750D00C5B707 /* SwiftDemos */,
 				F92E0B4F1C228AED00D0CF70 /* Categories */,
@@ -548,7 +546,7 @@
 				13AA93E21CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m in Sources */,
 				F92E0B571C228F0700D0CF70 /* NSString+Size.m in Sources */,
 				134F1A4A1CFE770300C5B707 /* SUIViewViewController.swift in Sources */,
-				134F1A3F1CFDBB3B00C5B707 /* UIView+common.m in Sources */,
+				134F1A3F1CFDBB3B00C5B707 /* UIView+operation.m in Sources */,
 				135A9CCC1C60547500A7C7AF /* UITextViewViewController.m in Sources */,
 				F92E0B5B1C2297FC00D0CF70 /* RootViewController.m in Sources */,
 				F92E0B641C229B0B00D0CF70 /* NSStringViewController.m in Sources */,

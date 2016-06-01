@@ -6,9 +6,9 @@
 //  Copyright © 2016年 dasheng. All rights reserved.
 //
 
-#import "UIView+common.h"
+#import "UIView+operation.h"
 
-@implementation UIView (common)
+@implementation UIView (operation)
 
 - (void)removeAllSubviews {
     for (UIView *subview in self.subviews) {
