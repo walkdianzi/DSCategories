@@ -31,16 +31,4 @@
 - (CGSize)ksize;
 - (void)setKsize:(CGSize)size;
 
-
-/**
- *  移除所有的subViews
- */
-- (void)removeAllSubviews;
-
-/**
- *  得到当前屏幕的截图
- *
- *  @return 当前屏幕截图的image
- */
-- (UIImage *)screenshot;
 @end

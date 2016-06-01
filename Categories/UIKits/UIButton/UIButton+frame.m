@@ -14,8 +14,6 @@
     return self.imageView.frame.origin.x;
 }
 
-//0.0.2的测试
-
 
 -(void)setImageLeft:(float)imageLeft{
     if (self.contentHorizontalAlignment==UIControlContentHorizontalAlignmentLeft) {
