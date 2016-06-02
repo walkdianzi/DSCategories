@@ -22,7 +22,7 @@
 To integrate DSCategories into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/walkdianzi/DSSpecs.git'
 platform :ios, '7.0'
 
 target :zhefengle do
