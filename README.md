@@ -9,6 +9,7 @@
 - NSString+Size（修改了可以根据设置行间距和字体来计算文本高度，加入了得到有行间距的NSAttributedString）
 - NSArray+SafeAccess（修改某些返回值为默认值而不返回nil，如返回@"",0等）
 - NSDictionary+SafeAccess（修改某些返回值为默认值而不返回nil，如返回@"",0等）
+- NSUserDefaults+SafeAccess
 
 ##UIKits
 
