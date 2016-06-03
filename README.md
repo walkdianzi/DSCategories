@@ -51,6 +51,7 @@ $ pod install
  **0.0.7**
 
  UIView+common改名UIView+operation
+ 
  加入NSString+Attribute
 
  **0.0.6**
