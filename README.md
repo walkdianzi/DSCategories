@@ -57,6 +57,8 @@ $ pod install
 
  加入UIView+Toast
 
+ UIView+Frame 增加相对位置功能
+
  **0.0.6**
  
  拆分UIView+frame
