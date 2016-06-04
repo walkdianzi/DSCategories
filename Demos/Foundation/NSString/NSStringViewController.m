@@ -8,6 +8,7 @@
 
 #import "NSStringViewController.h"
 #import "NSString+Size.h"
+#import "NSString+Attribute.h"
 
 @interface NSStringViewController(){
     
@@ -62,7 +63,7 @@
     _widthLabel.textColor = [UIColor blackColor];
     _widthLabel.attributedText = [_textDetail2 attributedStringWithFont:[UIFont systemFontOfSize:20] LineSpacing:10];
     
-    CGFloat detailWidth = [_textDetail2 widthWithFont:[UIFont systemFontOfSize:20] constrainedToHeight:20];
+    CGFloat detailWidth = [_textDetail2 widthWithFont:[UIFont systemFontOfSize:20]];
     CGRect frame2;
     frame2.size.width = detailWidth;
     frame2.size.height = 20;

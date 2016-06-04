@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 Sillon. All rights reserved.
 //
 
-#import "UIView+frame.h"
+#import "UIView+Frame.h"
 
-@implementation UIView (frame)
+@implementation UIView (Frame)
 
 - (CGFloat)kleft {
     return self.frame.origin.x;

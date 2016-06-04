@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (frame)
+@interface UIView (Frame)
 
 - (CGFloat)kleft;
 - (void)setKleft:(CGFloat)x;

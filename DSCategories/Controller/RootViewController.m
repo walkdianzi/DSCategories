@@ -7,8 +7,6 @@
 //
 
 #import "RootViewController.h"
-#import "DSCategories-Bridging-Header.h"
-#import "DSCategories-Swift.h"
 
 @implementation RootViewController
 
@@ -24,9 +22,6 @@
                @"UIKits":@[
                             @"UITextView",
                           ],
-               @"SUIKits":@[
-                            @"SUIView"
-                          ]
              };
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [self.tableView reloadData];
@@ -57,12 +52,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *name =  [_items objectForKey:[_items allKeys][indexPath.section]][indexPath.row];
-    
-    if ([name isEqualToString:@"SUIView"]) {
-        SUIViewViewController *VC = [[SUIViewViewController alloc] init];
-        [self.navigationController pushViewController:VC animated:YES];
-    }
-    
     NSString *className = [name stringByAppendingString:@"ViewController"];
     Class class = NSClassFromString(className);
     UIViewController *controller = [[class alloc] init];

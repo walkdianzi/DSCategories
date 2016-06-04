@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (operation)
+@interface UIView (Operation)
 
 /**
  *  移除所有的subViews

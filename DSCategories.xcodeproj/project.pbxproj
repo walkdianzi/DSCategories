@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		134F1A3C1CFDBA3600C5B707 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3B1CFDBA3600C5B707 /* UIView+frame.m */; };
-		134F1A3F1CFDBB3B00C5B707 /* UIView+operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3E1CFDBB3B00C5B707 /* UIView+operation.m */; };
-		134F1A481CFE75AD00C5B707 /* UIView+frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A471CFE75AD00C5B707 /* UIView+frame.swift */; };
-		134F1A4A1CFE770300C5B707 /* SUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A491CFE770300C5B707 /* SUIViewViewController.swift */; };
-		134F1A4E1CFE810D00C5B707 /* NSObject-FromClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A4D1CFE810D00C5B707 /* NSObject-FromClassName.swift */; };
+		134F1A3C1CFDBA3600C5B707 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3B1CFDBA3600C5B707 /* UIView+Frame.m */; };
+		134F1A3F1CFDBB3B00C5B707 /* UIView+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3E1CFDBB3B00C5B707 /* UIView+Operation.m */; };
+		1352C42E1D01B131006B70AB /* NSString+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1352C42D1D01B131006B70AB /* NSString+Attribute.m */; };
+		1352C4311D01B511006B70AB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1352C4301D01B511006B70AB /* UIView+Toast.m */; };
+		1352C4351D026875006B70AB /* DSCategories.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1352C4341D026875006B70AB /* DSCategories.bundle */; };
 		13543FB81CB757F100733EDA /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 13543FB41CB757F100733EDA /* NSArray+SafeAccess.m */; };
 		13543FB91CB757F100733EDA /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 13543FB71CB757F100733EDA /* NSDictionary+SafeAccess.m */; };
 		135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */; };
@@ -50,13 +50,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		134F1A3A1CFDBA3600C5B707 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
-		134F1A3B1CFDBA3600C5B707 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
-		134F1A3D1CFDBB3B00C5B707 /* UIView+operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+operation.h"; sourceTree = "<group>"; };
-		134F1A3E1CFDBB3B00C5B707 /* UIView+operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+operation.m"; sourceTree = "<group>"; };
-		134F1A471CFE75AD00C5B707 /* UIView+frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+frame.swift"; sourceTree = "<group>"; };
-		134F1A491CFE770300C5B707 /* SUIViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIViewViewController.swift; sourceTree = "<group>"; };
-		134F1A4D1CFE810D00C5B707 /* NSObject-FromClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject-FromClassName.swift"; sourceTree = "<group>"; };
+		134F1A3A1CFDBA3600C5B707 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		134F1A3B1CFDBA3600C5B707 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		134F1A3D1CFDBB3B00C5B707 /* UIView+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Operation.h"; sourceTree = "<group>"; };
+		134F1A3E1CFDBB3B00C5B707 /* UIView+Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Operation.m"; sourceTree = "<group>"; };
+		1352C42C1D01B131006B70AB /* NSString+Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Attribute.h"; sourceTree = "<group>"; };
+		1352C42D1D01B131006B70AB /* NSString+Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Attribute.m"; sourceTree = "<group>"; };
+		1352C42F1D01B511006B70AB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		1352C4301D01B511006B70AB /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		1352C4341D026875006B70AB /* DSCategories.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DSCategories.bundle; sourceTree = "<group>"; };
 		13543FB31CB757F100733EDA /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
 		13543FB41CB757F100733EDA /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
 		13543FB61CB757F100733EDA /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
@@ -123,77 +125,14 @@
 		134F1A391CFDBA3600C5B707 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				134F1A3A1CFDBA3600C5B707 /* UIView+frame.h */,
-				134F1A3B1CFDBA3600C5B707 /* UIView+frame.m */,
-				134F1A3D1CFDBB3B00C5B707 /* UIView+operation.h */,
-				134F1A3E1CFDBB3B00C5B707 /* UIView+operation.m */,
+				1352C42F1D01B511006B70AB /* UIView+Toast.h */,
+				1352C4301D01B511006B70AB /* UIView+Toast.m */,
+				134F1A3A1CFDBA3600C5B707 /* UIView+Frame.h */,
+				134F1A3B1CFDBA3600C5B707 /* UIView+Frame.m */,
+				134F1A3D1CFDBB3B00C5B707 /* UIView+Operation.h */,
+				134F1A3E1CFDBB3B00C5B707 /* UIView+Operation.m */,
 			);
 			path = UIView;
-			sourceTree = "<group>";
-		};
-		134F1A401CFDC24900C5B707 /* Swift_Extension */ = {
-			isa = PBXGroup;
-			children = (
-				134F1A4B1CFE80F600C5B707 /* Foundation */,
-				134F1A411CFDC2AA00C5B707 /* UIKits */,
-			);
-			path = Swift_Extension;
-			sourceTree = "<group>";
-		};
-		134F1A411CFDC2AA00C5B707 /* UIKits */ = {
-			isa = PBXGroup;
-			children = (
-				134F1A421CFDC2AA00C5B707 /* UIView */,
-			);
-			path = UIKits;
-			sourceTree = "<group>";
-		};
-		134F1A421CFDC2AA00C5B707 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				134F1A471CFE75AD00C5B707 /* UIView+frame.swift */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		134F1A431CFE750D00C5B707 /* SwiftDemos */ = {
-			isa = PBXGroup;
-			children = (
-				134F1A441CFE756700C5B707 /* UIKits */,
-			);
-			path = SwiftDemos;
-			sourceTree = "<group>";
-		};
-		134F1A441CFE756700C5B707 /* UIKits */ = {
-			isa = PBXGroup;
-			children = (
-				134F1A451CFE756700C5B707 /* UIView */,
-			);
-			path = UIKits;
-			sourceTree = "<group>";
-		};
-		134F1A451CFE756700C5B707 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				134F1A491CFE770300C5B707 /* SUIViewViewController.swift */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		134F1A4B1CFE80F600C5B707 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				134F1A4C1CFE80F600C5B707 /* NSObject */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		134F1A4C1CFE80F600C5B707 /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-				134F1A4D1CFE810D00C5B707 /* NSObject-FromClassName.swift */,
-			);
-			path = NSObject;
 			sourceTree = "<group>";
 		};
 		13543FB21CB757F100733EDA /* NSArray */ = {
@@ -272,9 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				F92E0B5C1C229A3600D0CF70 /* Demos */,
-				134F1A431CFE750D00C5B707 /* SwiftDemos */,
 				F92E0B4F1C228AED00D0CF70 /* Categories */,
-				134F1A401CFDC24900C5B707 /* Swift_Extension */,
 				F92E0B1B1C2289E200D0CF70 /* DSCategories */,
 				F92E0B351C2289E200D0CF70 /* DSCategoriesTests */,
 				F92E0B401C2289E200D0CF70 /* DSCategoriesUITests */,
@@ -338,6 +275,7 @@
 		F92E0B4F1C228AED00D0CF70 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				1352C4341D026875006B70AB /* DSCategories.bundle */,
 				135A9CC01C6051CF00A7C7AF /* UIKits */,
 				F92E0B501C228AED00D0CF70 /* Foundation */,
 			);
@@ -360,6 +298,8 @@
 			children = (
 				F92E0B551C228F0700D0CF70 /* NSString+Size.h */,
 				F92E0B561C228F0700D0CF70 /* NSString+Size.m */,
+				1352C42C1D01B131006B70AB /* NSString+Attribute.h */,
+				1352C42D1D01B131006B70AB /* NSString+Attribute.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -505,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1352C4351D026875006B70AB /* DSCategories.bundle in Resources */,
 				F92E0B2C1C2289E200D0CF70 /* LaunchScreen.storyboard in Resources */,
 				F92E0B291C2289E200D0CF70 /* Assets.xcassets in Resources */,
 				F92E0B271C2289E200D0CF70 /* Main.storyboard in Resources */,
@@ -532,21 +473,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				134F1A481CFE75AD00C5B707 /* UIView+frame.swift in Sources */,
 				13543FB91CB757F100733EDA /* NSDictionary+SafeAccess.m in Sources */,
 				F92E0B241C2289E200D0CF70 /* ViewController.m in Sources */,
-				134F1A4E1CFE810D00C5B707 /* NSObject-FromClassName.swift in Sources */,
 				13543FB81CB757F100733EDA /* NSArray+SafeAccess.m in Sources */,
 				13AA93DE1CFBDA7700E18CC3 /* UIButton+frame.m in Sources */,
-				134F1A3C1CFDBA3600C5B707 /* UIView+frame.m in Sources */,
+				134F1A3C1CFDBA3600C5B707 /* UIView+Frame.m in Sources */,
 				135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */,
+				1352C42E1D01B131006B70AB /* NSString+Attribute.m in Sources */,
 				F92E0B611C229AC600D0CF70 /* BaseViewController.m in Sources */,
+				1352C4311D01B511006B70AB /* UIView+Toast.m in Sources */,
 				F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */,
 				F92E0B1E1C2289E200D0CF70 /* main.m in Sources */,
 				13AA93E21CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m in Sources */,
 				F92E0B571C228F0700D0CF70 /* NSString+Size.m in Sources */,
-				134F1A4A1CFE770300C5B707 /* SUIViewViewController.swift in Sources */,
-				134F1A3F1CFDBB3B00C5B707 /* UIView+operation.m in Sources */,
+				134F1A3F1CFDBB3B00C5B707 /* UIView+Operation.m in Sources */,
 				135A9CCC1C60547500A7C7AF /* UITextViewViewController.m in Sources */,
 				F92E0B5B1C2297FC00D0CF70 /* RootViewController.m in Sources */,
 				F92E0B641C229B0B00D0CF70 /* NSStringViewController.m in Sources */,

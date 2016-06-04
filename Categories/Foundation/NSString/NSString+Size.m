@@ -11,23 +11,6 @@
 
 @implementation NSString (Size)
 
-- (NSAttributedString *)attributedStringWithFont:(UIFont *)font{
-    
-    return [self attributedStringWithFont:font LineSpacing:0];
-}
-
--(NSAttributedString *)attributedStringWithFont:(UIFont *)font LineSpacing:(CGFloat)lineSpace{
-    
-    UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
-    
-    NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:self];
-    NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    [paragraphStyle setLineSpacing:lineSpace];
-    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [self length])];
-    [attributedString addAttribute:NSFontAttributeName value:textFont range:NSMakeRange(0, [self length])];
-    return attributedString;
-}
-
 - (CGFloat)heightWithFont:(UIFont *)font constrainedToWidth:(CGFloat)width{
     
     return [self heightWithFont:font LineSpacing:0 constrainedToWidth:width];
@@ -77,8 +60,8 @@
 }
 
 
-- (CGFloat)widthWithFont:(UIFont *)font constrainedToHeight:(CGFloat)height
-{
+- (CGFloat)widthWithFont:(UIFont *)font{
+    
     UIFont *textFont = font ? font : [UIFont systemFontOfSize:[UIFont systemFontSize]];
     
     CGSize textSize;
@@ -90,14 +73,14 @@
         
         NSDictionary *attributes = @{NSFontAttributeName: textFont,
                                      NSParagraphStyleAttributeName: paragraph};
-        textSize = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)
+        textSize = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 100)
                                       options:(NSStringDrawingUsesLineFragmentOrigin |
                                                NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading)
                                    attributes:attributes
                                       context:nil].size;
     } else {
         textSize = [self sizeWithFont:textFont
-                    constrainedToSize:CGSizeMake(CGFLOAT_MAX, height)
+                    constrainedToSize:CGSizeMake(CGFLOAT_MAX, 100)
                         lineBreakMode:NSLineBreakByWordWrapping];
     }
 #else
@@ -106,7 +89,7 @@
     
     NSDictionary *attributes = @{NSFontAttributeName: textFont,
                                  NSParagraphStyleAttributeName: paragraph};
-    textSize = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)
+    textSize = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 100)
                                   options:(NSStringDrawingUsesLineFragmentOrigin |
                                            NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading)
                                attributes:attributes
