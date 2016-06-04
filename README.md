@@ -24,6 +24,7 @@
 - UIButton+Frame (可以调节UIButton上图片和文字的位置)
 - UIView+Frame (设置UIView的位置)
 - UIView+Operation (移除所有的subViews，得到当前屏幕的截图)
+- UIView+Toast
 
 ## Podfile
 
@@ -53,6 +54,8 @@ $ pod install
  UIView+common改名UIView+operation
  
  加入NSString+Attribute
+
+ 加入UIView+Toast
 
  **0.0.6**
  
