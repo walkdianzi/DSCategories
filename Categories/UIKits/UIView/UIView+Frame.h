@@ -31,4 +31,21 @@
 - (CGSize)ksize;
 - (void)setKsize:(CGSize)size;
 
+
+- (void)heightEqualToView:(UIView *)view;
+- (void)widthEqualToView:(UIView *)view;
+- (void)centerXEqualToView:(UIView *)view;
+- (void)centerYEqualToView:(UIView *)view;
+- (void)centerEqualToView:(UIView *)view;
+- (void)topEqualToView:(UIView *)view;
+- (void)bottomEqualToView:(UIView *)view;
+- (void)leftEqualToView:(UIView *)view;
+- (void)rightEqualToView:(UIView *)view;
+- (void)sizeEqualToView:(UIView *)view;
+
+
+- (void)fromTheTop:(CGFloat)distance ofView:(UIView *)view;
+- (void)fromTheBottom:(CGFloat)distance ofView:(UIView *)view;
+- (void)fromTheLeft:(CGFloat)distance ofView:(UIView *)view;
+- (void)fromTheRight:(CGFloat)distance ofView:(UIView *)view;
 @end

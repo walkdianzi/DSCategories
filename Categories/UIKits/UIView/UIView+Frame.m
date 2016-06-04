@@ -106,4 +106,135 @@
     self.frame = frame;
 }
 
+
+//--------------相对位置---------------
+
+- (void)heightEqualToView:(UIView *)view{
+    
+    self.kheight = view.kheight;
+}
+
+- (void)widthEqualToView:(UIView *)view{
+    
+    self.kwidth = view.kwidth;
+}
+
+- (void)centerXEqualToView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewCenterPoint = [superView convertPoint:view.center toView:self.topSuperView];
+    CGPoint centerPoint = [self.topSuperView convertPoint:viewCenterPoint toView:self.superview];
+    self.kcenterX = centerPoint.x;
+}
+
+- (void)centerYEqualToView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewCenterPoint = [superView convertPoint:view.center toView:self.topSuperView];
+    CGPoint centerPoint = [self.topSuperView convertPoint:viewCenterPoint toView:self.superview];
+    self.kcenterY = centerPoint.y;
+}
+
+- (void)centerEqualToView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewCenterPoint = [superView convertPoint:view.center toView:self.topSuperView];
+    CGPoint centerPoint = [self.topSuperView convertPoint:viewCenterPoint toView:self.superview];
+    self.kcenterX = centerPoint.x;
+    self.kcenterY = centerPoint.y;
+}
+
+- (void)topEqualToView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.korigin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.ktop = newOrigin.y;
+}
+
+- (void)bottomEqualToView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.korigin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.ktop = newOrigin.y + view.kheight - self.kheight;
+}
+
+- (void)leftEqualToView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.korigin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.kleft = newOrigin.x;
+}
+
+- (void)rightEqualToView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.korigin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.kleft = newOrigin.x + view.kwidth - self.kwidth;
+}
+
+- (void)sizeEqualToView:(UIView *)view{
+    
+    self.frame = CGRectMake(self.kleft, self.ktop, view.kwidth, view.kheight);
+}
+
+
+- (void)fromTheTop:(CGFloat)distance ofView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.korigin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.ktop = floorf(newOrigin.y + distance + view.kheight);
+}
+
+- (void)fromTheBottom:(CGFloat)distance ofView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.korigin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.ktop = newOrigin.y - distance - self.kheight;
+}
+
+- (void)fromTheLeft:(CGFloat)distance ofView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.korigin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.kleft = newOrigin.x - distance - self.kwidth;
+}
+
+- (void)fromTheRight:(CGFloat)distance ofView:(UIView *)view{
+    
+    UIView *superView = view.superview ? view.superview : view;
+    CGPoint viewOrigin = [superView convertPoint:view.korigin toView:self.topSuperView];
+    CGPoint newOrigin = [self.topSuperView convertPoint:viewOrigin toView:self.superview];
+    
+    self.kleft = newOrigin.x + distance + view.kwidth;
+}
+
+- (UIView *)topSuperView{
+    
+    UIView *topSuperView = self.superview;
+    
+    if (topSuperView == nil) {
+        topSuperView = self;
+    } else {
+        while (topSuperView.superview) {
+            topSuperView = topSuperView.superview;
+        }
+    }
+    
+    return topSuperView;
+}
+
 @end
