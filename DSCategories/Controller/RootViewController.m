@@ -21,6 +21,7 @@
                                ],
                @"UIKits":@[
                             @"UITextView",
+                            @"UIButton"
                           ],
              };
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];

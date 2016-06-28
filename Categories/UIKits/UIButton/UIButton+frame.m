@@ -181,28 +181,46 @@
         padding = 0;
     }
     
+    CGFloat imageSizeWidth = self.imageView.frame.size.width;
+    [self.titleLabel sizeToFit];
+    CGFloat titleSizeWidth = self.titleLabel.frame.size.width;
+    CGFloat titleSizeHeight = self.titleLabel.frame.size.height;
+    
+    //如果文字跟图片的宽度大于button的宽度，则要设置contentEdgeInsets，不然文字会消失不见。因为UIButton内部应该是autolayout的。
+    if (imageSizeWidth+titleSizeWidth>self.frame.size.width) {
+        CGFloat outWidth = imageSizeWidth+titleSizeWidth - self.frame.size.width;
+        self.contentEdgeInsets = UIEdgeInsetsMake(0, -outWidth, 0, -outWidth);
+    }
+    
+    CGFloat topAndBottomMargin = (self.frame.size.height - self.imageView.frame.size.height - titleSizeHeight - padding)/2;
+    CGFloat imageLeftInset = self.frame.size.width/2 - (self.imageView.frame.origin.x + self.imageView.frame.size.width/2);
+    CGFloat titleLeftInset = self.titleLabel.frame.origin.x + self.titleLabel.frame.size.width/2 - self.frame.size.width/2;
+
+    
     if (self.contentHorizontalAlignment==UIControlContentHorizontalAlignmentLeft) {
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self setImageEdgeInsets:UIEdgeInsetsMake(-self.imageView.frame.size.height-padding, (self.frame.size.width-self.imageView.frame.size.width)/2, 0, 0)];
-            [self setTitleEdgeInsets:UIEdgeInsetsMake(self.titleLabel.frame.size.height+padding, (self.frame.size.width-self.titleLabel.frame.size.width)/2-self.imageView.frame.size.width, 0, 0)];
+            [self setImageEdgeInsets:UIEdgeInsetsMake(-self.imageView.frame.origin.y + topAndBottomMargin, imageLeftInset, self.imageView.frame.origin.y - topAndBottomMargin, 0)];
+            
+            [self setTitleEdgeInsets:UIEdgeInsetsMake(self.frame.size.height - self.titleLabel.frame.size.height - topAndBottomMargin*2, -titleLeftInset, 0, 0)];
         });
         
     }else if (self.contentHorizontalAlignment == UIControlContentHorizontalAlignmentCenter){
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self setImageEdgeInsets:UIEdgeInsetsMake(-self.imageView.frame.size.height-padding, self.titleLabel.frame.size.width/2, 0, -self.titleLabel.frame.size.width/2)];
+            [self setImageEdgeInsets:UIEdgeInsetsMake(-self.imageView.frame.origin.y + topAndBottomMargin, imageLeftInset, self.imageView.frame.origin.y - topAndBottomMargin, -imageLeftInset)];
             
-            [self setTitleEdgeInsets:UIEdgeInsetsMake(self.titleLabel.frame.size.height+padding, -self.imageView.frame.size.width/2-15, 0, self.imageView.frame.size.width/2-15)];
+            [self setTitleEdgeInsets:UIEdgeInsetsMake(self.frame.size.height - self.titleLabel.frame.size.height - topAndBottomMargin*2, -titleLeftInset, 0, titleLeftInset)];
         });
     }else if (self.contentHorizontalAlignment==UIControlContentHorizontalAlignmentRight){
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
-            [self setImageEdgeInsets:UIEdgeInsetsMake(-self.imageView.frame.size.height-padding, 0, 0, (self.frame.size.width-self.imageView.frame.size.width)/2-self.titleLabel.frame.size.width)];
-            
-            
-            [self setTitleEdgeInsets:UIEdgeInsetsMake(self.titleLabel.frame.size.height+padding, 0, 0, (self.frame.size.width-self.titleLabel.frame.size.width)/2)];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self setImageEdgeInsets:UIEdgeInsetsMake(-self.imageView.frame.origin.y + topAndBottomMargin, 0, self.imageView.frame.origin.y - topAndBottomMargin, -imageLeftInset)];
+                
+                [self setTitleEdgeInsets:UIEdgeInsetsMake(self.frame.size.height - self.titleLabel.frame.size.height - topAndBottomMargin*2, -titleLeftInset, 0, titleLeftInset)];
+            });
         });
     }
 }

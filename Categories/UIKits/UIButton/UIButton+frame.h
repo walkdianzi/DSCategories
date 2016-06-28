@@ -31,10 +31,11 @@
 -(void)setImageAndTitleWithPadding:(CGFloat)padding;
 -(void)setImageAndTitleWithPadding:(CGFloat)padding isDelay:(BOOL)isDelay;
 
+
 //设置图片和文字都居中，图片在上,padding为图片跟文字的间距
 -(void)setImageAndTitleCenterImageTopWithpadding:(float)padding;
 
-//设置图片和文字都居中，文字在上,padding为图片跟文字的间距
+//设置图片和文字都居中，文字在上,padding为图片跟文字的间距 //TODO: 待测试，好像有问题
 -(void)setImageAndTitleCenterTitleTopWithpadding:(float)padding;
 
 @end
