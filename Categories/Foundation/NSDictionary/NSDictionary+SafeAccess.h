@@ -12,39 +12,39 @@
 @interface NSDictionary (SafeAccess)
 - (BOOL)hasKey:(NSString *)key;
 
-- (NSString*)stringForKey:(id)key;
+- (NSString*)ds_stringForKey:(id)key;
 
-- (NSNumber*)numberForKey:(id)key;
+- (NSNumber*)ds_numberForKey:(id)key;
 
-- (NSDecimalNumber *)decimalNumberForKey:(id)key;
+- (NSDecimalNumber *)ds_decimalNumberForKey:(id)key;
 
-- (NSArray*)arrayForKey:(id)key;
+- (NSArray*)ds_arrayForKey:(id)key;
 
-- (NSDictionary*)dictionaryForKey:(id)key;
+- (NSDictionary*)ds_dictionaryForKey:(id)key;
 
-- (NSInteger)integerForKey:(id)key;
+- (NSInteger)ds_integerForKey:(id)key;
 
-- (NSUInteger)unsignedIntegerForKey:(id)key;
+- (NSUInteger)ds_unsignedIntegerForKey:(id)key;
 
-- (BOOL)boolForKey:(id)key;
+- (BOOL)ds_boolForKey:(id)key;
 
-- (int16_t)int16ForKey:(id)key;
+- (int16_t)ds_int16ForKey:(id)key;
 
-- (int32_t)int32ForKey:(id)key;
+- (int32_t)ds_int32ForKey:(id)key;
 
-- (int64_t)int64ForKey:(id)key;
+- (int64_t)ds_int64ForKey:(id)key;
 
-- (char)charForKey:(id)key;
+- (char)ds_charForKey:(id)key;
 
-- (short)shortForKey:(id)key;
+- (short)ds_shortForKey:(id)key;
 
-- (float)floatForKey:(id)key;
+- (float)ds_floatForKey:(id)key;
 
-- (double)doubleForKey:(id)key;
+- (double)ds_doubleForKey:(id)key;
 
-- (long long)longLongForKey:(id)key;
+- (long long)ds_longLongForKey:(id)key;
 
-- (unsigned long long)unsignedLongLongForKey:(id)key;
+- (unsigned long long)ds_unsignedLongLongForKey:(id)key;
 
 - (NSDate *)dateForKey:(id)key dateFormat:(NSString *)dateFormat;
 

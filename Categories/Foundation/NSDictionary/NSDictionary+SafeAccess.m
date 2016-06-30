@@ -14,7 +14,7 @@
     return [self objectForKey:key] != nil;
 }
 
-- (NSString*)stringForKey:(id)key
+- (NSString*)ds_stringForKey:(id)key
 {
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
@@ -25,13 +25,13 @@
         return (NSString*)value;
     }
     if ([value isKindOfClass:[NSNumber class]]) {
-       return [value stringValue];
+        return [value stringValue];
     }
     
     return @"";
 }
 
-- (NSNumber*)numberForKey:(id)key
+- (NSNumber*)ds_numberForKey:(id)key
 {
     id value = [self objectForKey:key];
     if ([value isKindOfClass:[NSNumber class]]) {
@@ -45,7 +45,7 @@
     return nil;
 }
 
-- (NSDecimalNumber *)decimalNumberForKey:(id)key {
+- (NSDecimalNumber *)ds_decimalNumberForKey:(id)key {
     id value = [self objectForKey:key];
     
     if ([value isKindOfClass:[NSDecimalNumber class]]) {
@@ -61,7 +61,7 @@
 }
 
 
-- (NSArray*)arrayForKey:(id)key
+- (NSArray*)ds_arrayForKey:(id)key
 {
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
@@ -75,7 +75,8 @@
     return @[];
 }
 
-- (NSDictionary*)dictionaryForKey:(id)key
+
+- (NSDictionary*)ds_dictionaryForKey:(id)key
 {
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
@@ -89,7 +90,7 @@
     return @{};
 }
 
-- (NSInteger)integerForKey:(id)key
+- (NSInteger)ds_integerForKey:(id)key
 {
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
@@ -102,7 +103,7 @@
     }
     return 0;
 }
-- (NSUInteger)unsignedIntegerForKey:(id)key{
+- (NSUInteger)ds_unsignedIntegerForKey:(id)key{
     id value = [self objectForKey:key];
     if (value == nil || value == [NSNull null])
     {
@@ -114,7 +115,7 @@
     }
     return 0;
 }
-- (BOOL)boolForKey:(id)key
+- (BOOL)ds_boolForKey:(id)key
 {
     id value = [self objectForKey:key];
     
@@ -132,7 +133,7 @@
     }
     return NO;
 }
-- (int16_t)int16ForKey:(id)key
+- (int16_t)ds_int16ForKey:(id)key
 {
     id value = [self objectForKey:key];
     
@@ -150,7 +151,7 @@
     }
     return 0;
 }
-- (int32_t)int32ForKey:(id)key
+- (int32_t)ds_int32ForKey:(id)key
 {
     id value = [self objectForKey:key];
     
@@ -164,7 +165,7 @@
     }
     return 0;
 }
-- (int64_t)int64ForKey:(id)key
+- (int64_t)ds_int64ForKey:(id)key
 {
     id value = [self objectForKey:key];
     
@@ -178,7 +179,7 @@
     }
     return 0;
 }
-- (char)charForKey:(id)key{
+- (char)ds_charForKey:(id)key{
     id value = [self objectForKey:key];
     
     if (value == nil || value == [NSNull null])
@@ -191,7 +192,7 @@
     }
     return 0;
 }
-- (short)shortForKey:(id)key
+- (short)ds_shortForKey:(id)key
 {
     id value = [self objectForKey:key];
     
@@ -209,7 +210,7 @@
     }
     return 0;
 }
-- (float)floatForKey:(id)key
+- (float)ds_floatForKey:(id)key
 {
     id value = [self objectForKey:key];
     
@@ -223,7 +224,7 @@
     }
     return 0;
 }
-- (double)doubleForKey:(id)key
+- (double)ds_doubleForKey:(id)key
 {
     id value = [self objectForKey:key];
     
@@ -237,7 +238,7 @@
     }
     return 0;
 }
-- (long long)longLongForKey:(id)key
+- (long long)ds_longLongForKey:(id)key
 {
     id value = [self objectForKey:key];
     if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]]) {
@@ -246,7 +247,7 @@
     return 0;
 }
 
-- (unsigned long long)unsignedLongLongForKey:(id)key
+- (unsigned long long)ds_unsignedLongLongForKey:(id)key
 {
     id value = [self objectForKey:key];
     if ([value isKindOfClass:[NSString class]]) {
