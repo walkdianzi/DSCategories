@@ -59,6 +59,8 @@ $ pod install
 
  UIView+Frame 增加相对位置功能
 
+ NSDictionary+SafeAccess加上ds_前缀
+ 
  **0.0.6**
  
  拆分UIView+frame
