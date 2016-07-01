@@ -18,6 +18,10 @@
 		135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CC71C6053F200A7C7AF /* UITextView+PlaceHolder.m */; };
 		135A9CCC1C60547500A7C7AF /* UITextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */; };
 		13640B491D212560006EB89E /* UIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13640B481D212560006EB89E /* UIButtonViewController.m */; };
+		1378F6A61D26695600E4F947 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 1378F6A51D26695600E4F947 /* NSData+MD5.m */; };
+		1378F6AA1D26695F00E4F947 /* UIColor+RCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1378F6A91D26695F00E4F947 /* UIColor+RCColor.m */; };
+		1378F6AE1D266A8000E4F947 /* UIViewController+LifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1378F6AD1D266A8000E4F947 /* UIViewController+LifeCycle.m */; };
+		1378F6B11D266BBB00E4F947 /* UIButton+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1378F6B01D266BBB00E4F947 /* UIButton+BackgroundColor.m */; };
 		13AA93DE1CFBDA7700E18CC3 /* UIButton+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */; };
 		13AA93E21CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AA93E11CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m */; };
 		F92E0B1E1C2289E200D0CF70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B1D1C2289E200D0CF70 /* main.m */; };
@@ -73,6 +77,14 @@
 		135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewViewController.m; sourceTree = "<group>"; };
 		13640B471D212560006EB89E /* UIButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonViewController.h; sourceTree = "<group>"; };
 		13640B481D212560006EB89E /* UIButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonViewController.m; sourceTree = "<group>"; };
+		1378F6A41D26695600E4F947 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		1378F6A51D26695600E4F947 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		1378F6A81D26695F00E4F947 /* UIColor+RCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RCColor.h"; sourceTree = "<group>"; };
+		1378F6A91D26695F00E4F947 /* UIColor+RCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RCColor.m"; sourceTree = "<group>"; };
+		1378F6AC1D266A8000E4F947 /* UIViewController+LifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LifeCycle.h"; sourceTree = "<group>"; };
+		1378F6AD1D266A8000E4F947 /* UIViewController+LifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LifeCycle.m"; sourceTree = "<group>"; };
+		1378F6AF1D266BBB00E4F947 /* UIButton+BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BackgroundColor.h"; sourceTree = "<group>"; };
+		1378F6B01D266BBB00E4F947 /* UIButton+BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BackgroundColor.m"; sourceTree = "<group>"; };
 		13AA93DC1CFBDA7700E18CC3 /* UIButton+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+frame.h"; sourceTree = "<group>"; };
 		13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+frame.m"; sourceTree = "<group>"; };
 		13AA93E01CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SafeAccess.h"; sourceTree = "<group>"; };
@@ -162,6 +174,8 @@
 		135A9CC01C6051CF00A7C7AF /* UIKits */ = {
 			isa = PBXGroup;
 			children = (
+				1378F6AB1D266A4000E4F947 /* UIViewController */,
+				1378F6A71D26695F00E4F947 /* UIColor */,
 				134F1A391CFDBA3600C5B707 /* UIView */,
 				13AA93DB1CFBDA4800E18CC3 /* UIButton */,
 				135A9CC51C6053F200A7C7AF /* UITextView */,
@@ -199,9 +213,38 @@
 			path = UITextView;
 			sourceTree = "<group>";
 		};
+		1378F6A31D26695600E4F947 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				1378F6A41D26695600E4F947 /* NSData+MD5.h */,
+				1378F6A51D26695600E4F947 /* NSData+MD5.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		1378F6A71D26695F00E4F947 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				1378F6A81D26695F00E4F947 /* UIColor+RCColor.h */,
+				1378F6A91D26695F00E4F947 /* UIColor+RCColor.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		1378F6AB1D266A4000E4F947 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1378F6AC1D266A8000E4F947 /* UIViewController+LifeCycle.h */,
+				1378F6AD1D266A8000E4F947 /* UIViewController+LifeCycle.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		13AA93DB1CFBDA4800E18CC3 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				1378F6AF1D266BBB00E4F947 /* UIButton+BackgroundColor.h */,
+				1378F6B01D266BBB00E4F947 /* UIButton+BackgroundColor.m */,
 				13AA93DC1CFBDA7700E18CC3 /* UIButton+frame.h */,
 				13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */,
 			);
@@ -295,6 +338,7 @@
 		F92E0B501C228AED00D0CF70 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				1378F6A31D26695600E4F947 /* NSData */,
 				13AA93DF1CFC1DBC00E18CC3 /* NSUserDefaults */,
 				13543FB21CB757F100733EDA /* NSArray */,
 				13543FB51CB757F100733EDA /* NSDictionary */,
@@ -483,6 +527,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1378F6B11D266BBB00E4F947 /* UIButton+BackgroundColor.m in Sources */,
+				1378F6AA1D26695F00E4F947 /* UIColor+RCColor.m in Sources */,
 				13543FB91CB757F100733EDA /* NSDictionary+SafeAccess.m in Sources */,
 				F92E0B241C2289E200D0CF70 /* ViewController.m in Sources */,
 				13543FB81CB757F100733EDA /* NSArray+SafeAccess.m in Sources */,
@@ -491,6 +537,7 @@
 				135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */,
 				1352C42E1D01B131006B70AB /* NSString+Attribute.m in Sources */,
 				1349D7801D2620FE00198ADD /* UIViewViewController.m in Sources */,
+				1378F6AE1D266A8000E4F947 /* UIViewController+LifeCycle.m in Sources */,
 				F92E0B611C229AC600D0CF70 /* BaseViewController.m in Sources */,
 				1352C4311D01B511006B70AB /* UIView+Toast.m in Sources */,
 				F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */,
@@ -502,6 +549,7 @@
 				135A9CCC1C60547500A7C7AF /* UITextViewViewController.m in Sources */,
 				F92E0B5B1C2297FC00D0CF70 /* RootViewController.m in Sources */,
 				F92E0B641C229B0B00D0CF70 /* NSStringViewController.m in Sources */,
+				1378F6A61D26695600E4F947 /* NSData+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,9 +22,13 @@
 
 - UITextView+Placeholder (加入Placeholder)
 - UIButton+Frame (可以调节UIButton上图片和文字的位置)
+- UIButton+BackgroundColor （根据不同状态给UIButton添加不同颜色）
 - UIView+Frame (设置UIView的位置)
 - UIView+Operation (移除所有的subViews，得到当前屏幕的截图)
-- UIView+Toast
+- UIView+Toast （文字提示，或者加载提示）
+- UIColor+RCColor （十六进制string转UIColor， UIColor转UIImage）
+- NSData+MD5 （NSData的MD5加密）
+- UIViewController+LifeCycle (UIViewController生命周期函数的替换)
 
 ## Podfile
 
@@ -48,6 +52,16 @@ $ pod install
 ```
 
 ##版本更新
+
+ **0.0.9**
+
+ 加入UIColor+RCColor.h
+
+ 加入NSData+MD5.h
+
+ 加入UIViewController+LifeCycle
+ 
+ 加入UIButton+BackgroundColor
 
  **0.0.8**
 
