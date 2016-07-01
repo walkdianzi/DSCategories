@@ -36,7 +36,7 @@ platform :ios, '7.0'
 
 target :zhefengle do
 
-pod 'DSCategories', '~> 0.0.4'
+pod 'DSCategories', '~> 0.0.7'
 
 end
 ```
