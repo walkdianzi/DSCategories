@@ -7,7 +7,8 @@
 //
  
 #import <CommonCrypto/CommonDigest.h>
- 
+#import <UIKit/UIKit.h>
+
 @implementation NSData(MD5)
  
 - (NSString*)MD5
