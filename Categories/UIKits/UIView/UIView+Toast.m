@@ -246,7 +246,6 @@ static const NSString * CSToastAnimationImageKey= @"CSToastAnimationImageKey";
         }
     }else{
         NSInteger i = 1;
-        NSMutableArray *animationImageArray = [[NSMutableArray alloc] init];
         UIImage *image = [self imageNamed:[NSString stringWithFormat:@"toast_%ld",(long)i] ofBundle:@"DSCategories.bundle"];
         while (image) {
             [animationImageArray addObject:image];

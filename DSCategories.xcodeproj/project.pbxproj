@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1349D7801D2620FE00198ADD /* UIViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349D77F1D2620FE00198ADD /* UIViewViewController.m */; };
 		134F1A3C1CFDBA3600C5B707 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3B1CFDBA3600C5B707 /* UIView+Frame.m */; };
 		134F1A3F1CFDBB3B00C5B707 /* UIView+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 134F1A3E1CFDBB3B00C5B707 /* UIView+Operation.m */; };
 		1352C42E1D01B131006B70AB /* NSString+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1352C42D1D01B131006B70AB /* NSString+Attribute.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1349D77E1D2620FE00198ADD /* UIViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewViewController.h; sourceTree = "<group>"; };
+		1349D77F1D2620FE00198ADD /* UIViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewViewController.m; sourceTree = "<group>"; };
 		134F1A3A1CFDBA3600C5B707 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		134F1A3B1CFDBA3600C5B707 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		134F1A3D1CFDBB3B00C5B707 /* UIView+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Operation.h"; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				135A9CCB1C60547500A7C7AF /* UITextViewViewController.m */,
 				13640B471D212560006EB89E /* UIButtonViewController.h */,
 				13640B481D212560006EB89E /* UIButtonViewController.m */,
+				1349D77E1D2620FE00198ADD /* UIViewViewController.h */,
+				1349D77F1D2620FE00198ADD /* UIViewViewController.m */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 				134F1A3C1CFDBA3600C5B707 /* UIView+Frame.m in Sources */,
 				135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */,
 				1352C42E1D01B131006B70AB /* NSString+Attribute.m in Sources */,
+				1349D7801D2620FE00198ADD /* UIViewViewController.m in Sources */,
 				F92E0B611C229AC600D0CF70 /* BaseViewController.m in Sources */,
 				1352C4311D01B511006B70AB /* UIView+Toast.m in Sources */,
 				F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */,

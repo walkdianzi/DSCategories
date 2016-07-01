@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/walkdianzi/DSCategories.git", :tag => "0.0.7" }
   s.source_files  = "Categories", "Categories/**/*.{h,m}"
+  s.resource = "Categories/DSCategories.bundle"
   s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "Categories/**/*.h"
