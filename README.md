@@ -49,6 +49,10 @@ $ pod install
 
 ##版本更新
 
+ **0.0.8**
+
+ UIView+Toast bug修改 
+
  **0.0.7**
 
  UIView+common改名UIView+operation
