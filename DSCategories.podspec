@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "DSCategories"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "分类"
   s.description  = <<-DESC
                       分类,UIButton+frame,UITextView+Placeholder,NSString+Size,NSArray+SafeAccess,NSDictionary+SafeAccess
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.author             = { "dasheng" => "398411773@qq.com" }
   s.platform     = :ios
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/walkdianzi/DSCategories.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/walkdianzi/DSCategories.git", :tag => "0.1.1" }
   s.source_files  = "Categories", "Categories/**/*.{h,m}"
   s.resource = "Categories/DSCategories.bundle"
   s.exclude_files = "Classes/Exclude"

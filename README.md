@@ -62,7 +62,7 @@ $ pod install
 
 ##版本更新
 
- **0.1.0**
+ **0.1.1**
 
  UIImage+Compress.h
 
