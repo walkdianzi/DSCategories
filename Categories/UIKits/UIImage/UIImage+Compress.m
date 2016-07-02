@@ -48,7 +48,7 @@
     [self drawInRect:thumbnailRect];
     newImage = UIGraphicsGetImageFromCurrentImageContext();
     if(newImage == nil){
-        debugLog(@"scale image fail");
+        NSLog(@"scale image fail");
     }
     UIGraphicsEndImageContext();
     return newImage;
@@ -93,7 +93,6 @@
         tempImage = nil;
         compressPoint -= 0.1f;
         imageData = UIImageJPEGRepresentation(self, compressPoint);
-        //debugLog(@"%lu",imageData.length/1024);
         tempImage = [[UIImage alloc]initWithData:imageData];
         if (compressPoint == 0) {
             break;
