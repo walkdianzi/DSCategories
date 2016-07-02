@@ -14,6 +14,14 @@
  
  > 得到有行间距的NSAttributedString
 
+- NSString+Code.h
+
+ > 字符串EnCode和DeCode
+
+- NSString+MD5.h
+
+ > 字符串MD5加密
+
 - NSArray+SafeAccess（修改某些返回值为默认值而不返回nil，如返回@"",0等）
 - NSDictionary+SafeAccess（修改某些返回值为默认值而不返回nil，如返回@"",0等）
 - NSUserDefaults+SafeAccess
@@ -29,6 +37,7 @@
 - UIColor+RCColor （十六进制string转UIColor， UIColor转UIImage）
 - NSData+MD5 （NSData的MD5加密）
 - UIViewController+LifeCycle (UIViewController生命周期函数的替换)
+- UIImage+Compress.h (图片压缩)
 
 ## Podfile
 
@@ -53,7 +62,15 @@ $ pod install
 
 ##版本更新
 
- **0.0.9**
+ **0.1.0**
+
+ UIImage+Compress.h
+
+ NSString+Code.h
+
+ NSString+MD5.h
+
+ **0.0.10**
 
  加入UIColor+RCColor.h
 
