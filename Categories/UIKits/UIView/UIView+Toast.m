@@ -288,18 +288,21 @@ static const NSString * CSToastAnimationImageKey= @"CSToastAnimationImageKey";
 }
 
 - (void)hideToastAnimationImage{
-    UIView *existingActivityView = (UIView *)objc_getAssociatedObject(self, &CSToastAnimationImageKey);
-    if (existingActivityView != nil) {
-        [UIView animateWithDuration:CSToastFadeDuration
-                              delay:0.0
-                            options:(UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState)
-                         animations:^{
-                             existingActivityView.alpha = 0.0;
-                         } completion:^(BOOL finished) {
-                             [existingActivityView removeFromSuperview];
-                             objc_setAssociatedObject (self, &CSToastAnimationImageKey, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-                         }];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIView *existingActivityView = (UIView *)objc_getAssociatedObject(self, &CSToastAnimationImageKey);
+        if (existingActivityView != nil) {
+            [UIView animateWithDuration:CSToastFadeDuration
+                                  delay:0.0
+                                options:(UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState)
+                             animations:^{
+                                 existingActivityView.alpha = 0.0;
+                             } completion:^(BOOL finished) {
+                                 [existingActivityView removeFromSuperview];
+                                 objc_setAssociatedObject (self, &CSToastAnimationImageKey, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+                             }];
+        }
+        
+    });
 }
 
 #pragma mark - Helpers
