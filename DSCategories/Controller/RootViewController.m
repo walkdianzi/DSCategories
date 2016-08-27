@@ -22,6 +22,7 @@
                @"UIKits":@[
                             @"UITextView",
                             @"UIButton",
+                            @"UIButtonDoubleClick",
                             @"UIView"
                           ],
              };

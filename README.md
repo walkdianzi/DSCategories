@@ -31,6 +31,7 @@
 - UITextView+Placeholder (加入Placeholder)
 - UIButton+Frame (可以调节UIButton上图片和文字的位置)
 - UIButton+BackgroundColor （根据不同状态给UIButton添加不同颜色）
+- UIButton+DoubleClick (防止按钮多次点击)
 - UIView+Frame (设置UIView的位置)
 - UIView+Operation (移除所有的subViews，得到当前屏幕的截图)
 - UIView+Toast （文字提示，或者加载提示）
@@ -61,6 +62,10 @@ $ pod install
 ```
 
 ##版本更新
+
+ **0.1.2**
+ 
+ UIButton+DoubleClick.h
 
  **0.1.1**
 

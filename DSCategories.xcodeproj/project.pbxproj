@@ -27,6 +27,8 @@
 		1378F6B51D26A15400E4F947 /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1378F6B41D26A15400E4F947 /* UIImage+Compress.m */; };
 		13AA93DE1CFBDA7700E18CC3 /* UIButton+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */; };
 		13AA93E21CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AA93E11CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m */; };
+		333F976C1D71DC8C00306EAE /* UIButtonDoubleClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F976B1D71DC8C00306EAE /* UIButtonDoubleClickViewController.m */; };
+		333F976F1D71DCD900306EAE /* UIButton+DoubleClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F976E1D71DCD900306EAE /* UIButton+DoubleClick.m */; };
 		F92E0B1E1C2289E200D0CF70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B1D1C2289E200D0CF70 /* main.m */; };
 		F92E0B211C2289E200D0CF70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B201C2289E200D0CF70 /* AppDelegate.m */; };
 		F92E0B241C2289E200D0CF70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92E0B231C2289E200D0CF70 /* ViewController.m */; };
@@ -98,6 +100,10 @@
 		13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+frame.m"; sourceTree = "<group>"; };
 		13AA93E01CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SafeAccess.h"; sourceTree = "<group>"; };
 		13AA93E11CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SafeAccess.m"; sourceTree = "<group>"; };
+		333F976A1D71DC8C00306EAE /* UIButtonDoubleClickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonDoubleClickViewController.h; sourceTree = "<group>"; };
+		333F976B1D71DC8C00306EAE /* UIButtonDoubleClickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonDoubleClickViewController.m; sourceTree = "<group>"; };
+		333F976D1D71DCD900306EAE /* UIButton+DoubleClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DoubleClick.h"; sourceTree = "<group>"; };
+		333F976E1D71DCD900306EAE /* UIButton+DoubleClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DoubleClick.m"; sourceTree = "<group>"; };
 		F92E0B191C2289E200D0CF70 /* DSCategories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSCategories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92E0B1D1C2289E200D0CF70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F92E0B1F1C2289E200D0CF70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -196,6 +202,7 @@
 		135A9CC41C60536A00A7C7AF /* UIKits */ = {
 			isa = PBXGroup;
 			children = (
+				333F97691D71DBEE00306EAE /* UIButton */,
 				135A9CC91C60541800A7C7AF /* UITextView */,
 			);
 			path = UIKits;
@@ -266,6 +273,8 @@
 				1378F6B01D266BBB00E4F947 /* UIButton+BackgroundColor.m */,
 				13AA93DC1CFBDA7700E18CC3 /* UIButton+frame.h */,
 				13AA93DD1CFBDA7700E18CC3 /* UIButton+frame.m */,
+				333F976D1D71DCD900306EAE /* UIButton+DoubleClick.h */,
+				333F976E1D71DCD900306EAE /* UIButton+DoubleClick.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -277,6 +286,15 @@
 				13AA93E11CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m */,
 			);
 			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		333F97691D71DBEE00306EAE /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				333F976A1D71DC8C00306EAE /* UIButtonDoubleClickViewController.h */,
+				333F976B1D71DC8C00306EAE /* UIButtonDoubleClickViewController.m */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		F92E0B101C2289E200D0CF70 = {
@@ -559,6 +577,7 @@
 				134F1A3C1CFDBA3600C5B707 /* UIView+Frame.m in Sources */,
 				135A9CC81C6053F200A7C7AF /* UITextView+PlaceHolder.m in Sources */,
 				1352C42E1D01B131006B70AB /* NSString+Attribute.m in Sources */,
+				333F976C1D71DC8C00306EAE /* UIButtonDoubleClickViewController.m in Sources */,
 				1349D7801D2620FE00198ADD /* UIViewViewController.m in Sources */,
 				1378F6AE1D266A8000E4F947 /* UIViewController+LifeCycle.m in Sources */,
 				F92E0B611C229AC600D0CF70 /* BaseViewController.m in Sources */,
@@ -568,6 +587,7 @@
 				F92E0B1E1C2289E200D0CF70 /* main.m in Sources */,
 				13AA93E21CFC1DBC00E18CC3 /* NSUserDefaults+SafeAccess.m in Sources */,
 				F92E0B571C228F0700D0CF70 /* NSString+Size.m in Sources */,
+				333F976F1D71DCD900306EAE /* UIButton+DoubleClick.m in Sources */,
 				134F1A3F1CFDBB3B00C5B707 /* UIView+Operation.m in Sources */,
 				13640B491D212560006EB89E /* UIButtonViewController.m in Sources */,
 				1307E77D1D27A87000C574DB /* NSString+MD5.m in Sources */,
