@@ -26,6 +26,20 @@
                             @"UIView"
                           ],
              };
+    
+    _itemsName = @{
+               
+               @"Foundation":@[
+                       @"NSString 计算高度和宽度",
+                       ],
+               @"UIKits":@[
+                       @"UITextView 设置placehold",
+                       @"UIButton 设置图文位置",
+                       @"UIButton 防止多次点击",
+                       @"UIView 显示toast加载git"
+                       ],
+               };
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [self.tableView reloadData];
 }
@@ -46,7 +60,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text =  [_items objectForKey:[_items allKeys][indexPath.section]][indexPath.row];
+    cell.textLabel.text =  [_itemsName objectForKey:[_itemsName allKeys][indexPath.section]][indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }

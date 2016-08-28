@@ -11,6 +11,8 @@
 @interface RootViewController : UITableViewController{
     
     NSDictionary *_items;
+    
+    NSDictionary *_itemsName;
 }
 
 @end
