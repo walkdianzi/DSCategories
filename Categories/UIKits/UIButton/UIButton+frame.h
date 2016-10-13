@@ -6,36 +6,33 @@
 //  Copyright © 2016年 dasheng. All rights reserved.
 //
 
+/* TODO
+在iphone4这样的机器上会有问题，主要就是拿button的frame时候由于机器慢设置了frame，
+但取的时候frame还没有值，然后马上根据frame来设置EdgeInsets会有问题。如果需要支持
+这样低配的手机可以在调用一下方法的时候延时个0.1秒执行。
+*/
+
 #import <UIKit/UIKit.h>
 
 @interface UIButton (frame)
 
-//设置图片离左边的距离
+//设置图片离左边的距离，文字还在原来的位置
 -(float)imageLeft;
 -(void)setImageLeft:(float)imageLeft;
 
-//设置文字离左边的距离
+//设置文字离左边的距离，图片还在原来的位置
 -(float)titleLeft;
 -(void)setTitleLeft:(float)titleLeft;
 
-//设置文字居中
--(float)titleCenter;
--(void)setTitleCenter;
 
 //设置图片在文字右边
--(void)setimageToTitleRight;
--(void)setimageToTitleRightWithPadding:(CGFloat)padding;
--(void)setimageToTitleRightWithPadding:(CGFloat)padding isDelay:(BOOL)isDelay;
+-(void)setImageToTitleRight;
+-(void)setImageToTitleRightWithPadding:(CGFloat)padding;
 
 //图片在文字的左边
 -(void)setImageAndTitleWithPadding:(CGFloat)padding;
--(void)setImageAndTitleWithPadding:(CGFloat)padding isDelay:(BOOL)isDelay;
 
-
-//设置图片和文字都居中，图片在上,padding为图片跟文字的间距
+//设置图片和文字都居中，图片在上，padding为图片跟文字的间距
 -(void)setImageAndTitleCenterImageTopWithpadding:(float)padding;
-
-//设置图片和文字都居中，文字在上,padding为图片跟文字的间距 //TODO: 待测试，好像有问题
--(void)setImageAndTitleCenterTitleTopWithpadding:(float)padding;
 
 @end
