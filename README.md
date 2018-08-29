@@ -4,7 +4,7 @@
 
 有一些自己项目中需要的Category的修改及整理。基本上一个项目都会用到的category。
 
-##Foundation
+## Foundation
 
 - NSString+Size  
 
@@ -26,7 +26,7 @@
 - NSDictionary+SafeAccess（修改某些返回值为默认值而不返回nil，如返回@"",0等）
 - NSUserDefaults+SafeAccess
 
-##UIKits
+## UIKits
 
 - UITextView+Placeholder (加入Placeholder)
 - UIButton+Frame (可以调节UIButton上图片和文字的位置)
@@ -61,7 +61,7 @@ Then, run the following command:
 $ pod install
 ```
 
-##版本更新
+## 版本更新
 
  **0.1.4**
  
